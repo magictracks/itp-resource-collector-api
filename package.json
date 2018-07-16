@@ -1,0 +1,28 @@
+{
+  "name": "tagging-server",
+  "version": "0.0.1",
+  "description": "node, express, mongo based rest API for itp-tagged-resources",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start-dev": "nodemon index.js",
+    "getCodingTrainVideos": "node scripts/getCodingTrainVideos.js",
+    "getCodingTrainVideoDetails": "node scripts/getCodingTrainVideoDetails.js",
+    "importCodingTrain2Mongo": "node scripts/importCodingTrain2Mongo.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.7",
+    "mongoose-type-url": "^1.0.4",
+    "promise": "^8.0.1",
+    "q": "^1.5.1",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
+}
