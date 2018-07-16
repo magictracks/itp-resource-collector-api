@@ -23,12 +23,12 @@ mongod
 npm run importCodingTrain2Mongo
 ```
 
-4. Run the server
+4. Run the servern **In terminal windown #1**
 ```
 npm start
 ```
 
-5. Test a request
+5. Test a request **In terminal windown #3**
 ```
 # Retrieves a list of all the coding train tags
 curl -i http://127.0.0.1:5000/api/tags
