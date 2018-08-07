@@ -6,15 +6,15 @@ const Q = require('q');
 let videoList = []
 let promises = [];
 
-let data = JSON.parse(fs.readFileSync("temp.json"))
+let data = JSON.parse(fs.readFileSync("./data/videoIds.json"))
 
-// flatten the 
+// flatten the
 data.forEach( obj => {
     if(obj.items.length > 0){
         obj.items.forEach( item => {
             videoList.push(item)
         })
-    } 
+    }
 })
 
 // 524 videos as of 20180710
@@ -188,7 +188,3 @@ getStuffs();
     ]
 }
 */
-
-
-
-
